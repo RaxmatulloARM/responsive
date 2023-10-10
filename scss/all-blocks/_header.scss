@@ -1,0 +1,46 @@
+.nav {
+    margin: 0;
+    padding: 0;
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item+&__item {
+        margin-left: 33px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #83888F;
+        font-family: "Barlow";
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        
+
+        &:hover {
+            color: #333D4B;
+        }
+    }
+}
+
+.header__mobi {
+    display: none;
+}
+
+.nav__button {
+    display: none;
+}
+
+@media only screen and (max-width:634px) {
+    .nav {
+        display: none;
+    }
+
+    .nav__button {
+        display: block;
+    }
+}
